@@ -1,12 +1,5 @@
 const gameData = [
     {
-        name: "Sonic the Hedgehog 2 HD",
-        genre: "Action, Adventure, Family",
-        rating: "10.0",
-        year: "2017",
-        image: "https://m.media-amazon.com/images/M/MV5BZjk2NTE5ZGQtMzg5ZS00NzRkLWI5NDAtMzQ0YmQxYWE5Njc1XkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UX67_CR0,0,67,98_AL_.jpg"
-    },
-    {
         name: "The Witcher 3: Wild Hunt - Blood and Wine",
         genre: "Action, Adventure, Drama",
         rating: "9.8",

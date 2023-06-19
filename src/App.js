@@ -9,12 +9,13 @@ function App() {
   const [slicedGameData ,setSlicedGameData ] = useState([])
 
   const sliceGameData = ()=>{
+    const result = mergeSort(gameData,"year")
     const arr = []
-    for(let i = 0 ; i < 600; i++){
-      arr.push(gameData[i]);
+    for(let i = 0 ; i < 10; i++){
+      arr.push(result[i]);
     }
-    const result = mergeSort(arr,"name")
-    return result
+    
+    return arr
   }
 
   useEffect(()=>{
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <>
-      <div className=" grid justify-items-center">
+      <div className=" grid  justify-items-center">
     <Header/>
     <GameCard gameProps={slicedGameData}/>
     </div>
