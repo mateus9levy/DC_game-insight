@@ -1,10 +1,9 @@
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon, CalendarDaysIcon, QueueListIcon,StarIcon,ListBulletIcon} from '@heroicons/react/20/solid'
-
-import {
-  ChartPieIcon,
-} from '@heroicons/react/24/outline'
+import mergeSort from '../utils/mergeSort'
+import gameData from '../utils/data/data'
+import { useFlyMenuData } from '../context/flyMenuContext'
 
 const solutions = [
   { name: 'Nome (A-Z)', description: 'Get a better understanding of your traffic', href: '#', icon: ListBulletIcon },
@@ -12,15 +11,32 @@ const solutions = [
   { name: 'Ano', description: "Your customers' data will be safe and secure", href: '#', icon: CalendarDaysIcon },
 
 ]
-const callsToAction = [
-  { name: 'Ordenar', href: '#', icon: QueueListIcon },
-]
 
 function FlyOutMenu() {
+  const {setFlyMenuData} = useFlyMenuData()
+  const mergelist = (key) =>{
+    let toOrdenate = ""
+    switch(key){
+      case "Nome (A-Z)":
+        toOrdenate = "name";
+        break;
+      case 'Nota (10-0)':
+         toOrdenate = "rating";
+         break;
+      case "Ano":
+        toOrdenate = "year"
+        break;
+    }
+
+
+   return mergeSort(gameData,toOrdenate)
+  }
+
+
   return (
     <Popover className="relative">
       <Popover.Button className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-        <span>Ordenar</span>
+        <span>Opcoes de ordeção</span>
         <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
       </Popover.Button>
 
@@ -39,28 +55,19 @@ function FlyOutMenu() {
               {solutions.map((item) => (
                 <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
                   <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                    <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                    <item.icon className="h-6 w-6 z-i text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
                   </div>
                   <div>
-                    <a href={item.href} className="font-semibold text-gray-900">
+                    <a onClick={(()=>{
+                       const ordenated = mergelist(item.name)
+                       setFlyMenuData({loaded:true,ordenated:ordenated})
+                    })} 
+                    className="font-semibold text-gray-900">
                       {item.name}
-                      <span className="absolute inset-0" />
+                    <span className="absolute inset-0" />
                     </a>
-                    <p className="mt-1 text-gray-600">{item.description}</p>
                   </div>
                 </div>
-              ))}
-            </div>
-            <div className="grid grid-cols-1 divide-x divide-gray-900/5 bg-gray-50">
-              {callsToAction.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="flex items-center justify-center gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
-                >
-                  <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-                  {item.name}
-                </a>
               ))}
             </div>
           </div>
