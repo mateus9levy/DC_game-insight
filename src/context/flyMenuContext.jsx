@@ -4,6 +4,7 @@ const FlyMenuContext = createContext();
 
 export const FlyMenuProvider = ({ children }) => {
   const [flyMenuData, setFlyMenuData] = useState({loaded:false,ordenated:gameData});
+
   return (
     <FlyMenuContext.Provider value={{ flyMenuData, setFlyMenuData }}>
       {children}
