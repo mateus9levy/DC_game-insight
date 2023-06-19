@@ -1,12 +1,5 @@
 const gameData = [
     {
-        name: "The Witcher 3: Wild Hunt - Blood and Wine",
-        genre: "Action, Adventure, Drama",
-        rating: "9.8",
-        year: "2016",
-        image: "https://m.media-amazon.com/images/M/MV5BMzdhMjZlZjAtNDU5My00ZDJjLWFhOWUtOGU5YjU5ZDU0ZDU2XkEyXkFqcGdeQXVyODY5Njk4Njc@._V1_UX67_CR0,0,67,98_AL_.jpg"
-    },
-    {
         name: "Red Dead Redemption II",
         genre: "Action, Adventure, Crime",
         rating: "9.7",
@@ -26,13 +19,6 @@ const gameData = [
         rating: "9.7",
         year: "2013",
         image: "https://m.media-amazon.com/images/M/MV5BMTkzMzk3MzYzMV5BMl5BanBnXkFtZTgwOTQzMDM2MTE@._V1_UY98_CR2,0,67,98_AL_.jpg"
-    },
-    {
-        name: "Wiedzmin 3: Dziki Gon",
-        genre: "Action, Adventure, Drama",
-        rating: "9.7",
-        year: "2015",
-        image: "https://m.media-amazon.com/images/M/MV5BMDU4ODc1M2UtODg3Ny00NDViLTkxNmQtMzMzZWM1NGRmYTNjXkEyXkFqcGdeQXVyODY5Njk4Njc@._V1_UX67_CR0,0,67,98_AL_.jpg"
     },
     {
         name: "The Last of Us: Part I",
@@ -68,13 +54,6 @@ const gameData = [
         rating: "9.6",
         year: "1998",
         image: "https://m.media-amazon.com/images/M/MV5BZjFkNTA0OGEtYjk5OC00ZDM1LWJmN2QtM2JjY2M1ZTAyYjZlXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UX67_CR0,0,67,98_AL_.jpg"
-    },
-    {
-        name: "Grand Theft Auto V",
-        genre: "Action, Comedy, Crime",
-        rating: "9.5",
-        year: "2013",
-        image: "https://m.media-amazon.com/images/M/MV5BYjEzMTM4ZmQtZTEzYS00ZGVmLTkwM2EtNWNmMDI4OWQ0MjBmXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UX67_CR0,0,67,98_AL_.jpg"
     },
     {
         name: "God of War",
@@ -595,7 +574,7 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BZjQxMThjZjAtNzZmMy00ODViLWFjNDAtMDJiOWUxZTQ0OGRiXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_UX67_CR0,0,67,98_AL_.jpg"
     },
     {
-        name: "God of War",
+        name: "God of War - Ps2",
         genre: "Action, Adventure, Fantasy",
         rating: "9.1",
         year: "2005",
@@ -1771,7 +1750,7 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BYTljYjM2OGYtNzU5NC00ODBiLTk4Y2ItMmE0ZDUxMzJmYWU4XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX67_CR0,0,67,98_AL_.jpg"
     },
     {
-        name: "Dead Space",
+        name: "Dead Space - 2008",
         genre: "Action, Horror, Mystery",
         rating: "8.8",
         year: "2008",
@@ -5635,7 +5614,7 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BMWJkMWQ0Y2ItM2E1Mi00NmM2LThjYWItODQ3NGE5N2M1N2E5XkEyXkFqcGdeQXVyMzY0MDAyMDI@._V1_UY98_CR5,0,67,98_AL_.jpg"
     },
     {
-        name: "inFamous 2",
+        name: "InFamous 2",
         genre: "Action, Adventure, Fantasy",
         rating: "8.4",
         year: "2011",
@@ -6305,13 +6284,6 @@ const gameData = [
         rating: "8.4",
         year: "1994",
         image: "https://m.media-amazon.com/images/M/MV5BY2Y0MzM5ZDAtMTk4YS00NzQ4LTg5ZjItNTFlZmU2ZWFhMjYyXkEyXkFqcGdeQXVyNzg5OTk2OA@@._V1_UY98_CR15,0,67,98_AL_.jpg"
-    },
-    {
-        name: "Ôgon no taiyô: Shitsu warate jidai",
-        genre: "Action, Adventure, Fantasy",
-        rating: "8.4",
-        year: "2002",
-        image: "https://m.media-amazon.com/images/M/MV5BMGZmNjAyYmEtMTBlZS00YjJlLWI3ZmUtNWUzYjliMzVlM2U5XkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UX67_CR0,0,67,98_AL_.jpg"
     },
     {
         name: "Grand Poo World 2",
@@ -7894,13 +7866,6 @@ const gameData = [
         rating: "8.3",
         year: "2017",
         image: "https://m.media-amazon.com/images/M/MV5BOWY2Y2M5NGQtZGYxNS00ZGY2LTg2NjgtNDlkY2VkYzYwMTExXkEyXkFqcGdeQXVyMTk5NDI0MA@@._V1_UX67_CR0,0,67,98_AL_.jpg"
-    },
-    {
-        name: "Ôgon no taiyô: Hirakareshi fûin",
-        genre: "Adventure, Fantasy",
-        rating: "8.3",
-        year: "2001",
-        image: "https://m.media-amazon.com/images/M/MV5BMDg3MDQ3NTMtOTBjZC00NDJkLTg3Y2QtYjJiNDQ4ZDJlMGNmXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UX67_CR0,0,67,98_AL_.jpg"
     },
     {
         name: "Baldur's Gate: Enhanced Edition",
@@ -10871,13 +10836,6 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BMjEzZmZkMjgtNTI3ZC00MmMyLTk1M2EtNjc5MjQ0M2RhYzVhXkEyXkFqcGdeQXVyNzg3NjQyOQ@@._V1_UY98_CR15,0,67,98_AL_.jpg"
     },
     {
-        name: "The Adventures of Batman & Robin",
-        genre: "Action, Crime",
-        rating: "8.2",
-        year: "1995",
-        image: "https://m.media-amazon.com/images/M/MV5BN2UwOGZhNmMtOWU5Ny00MDU5LTliODctZGQ4NGY1ZDc1MWE3XkEyXkFqcGdeQXVyMTk5NDI0MA@@._V1_UY98_CR1,0,67,98_AL_.jpg"
-    },
-    {
         name: "Pinball FX3",
         genre: "Action",
         rating: "8.2",
@@ -11725,7 +11683,7 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BODVlOWFhNTktMjVlMy00NmJjLTg3YmItNmQ1NTdmOTYwN2VjXkEyXkFqcGdeQXVyNzA1OTk3Mw@@._V1_UY98_CR1,0,67,98_AL_.jpg"
     },
     {
-        name: "Age of Empires: Definitive Edition",
+        name: "Age of Empires",
         genre: "Adventure, History, War",
         rating: "8.2",
         year: "2018",
@@ -14483,7 +14441,7 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BMDQ0YTU2ZjgtZmZiZC00YWM2LTljYWYtOWI2NzUzZmIwMzg4XkEyXkFqcGdeQXVyNDQ2MTMzODA@._V1_UY98_CR1,0,67,98_AL_.jpg"
     },
     {
-        name: "inFamous: Second Son",
+        name: "InFamous: Second Son",
         genre: "Action, Adventure, Fantasy",
         rating: "8.0",
         year: "2014",
@@ -14581,7 +14539,7 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BNTQyNDAzYjEtY2NjNS00MjM3LWEyNjgtNzI3ZWJjMWM0NGM3XkEyXkFqcGdeQXVyMjM5NzU3OTM@._V1_UY98_CR1,0,67,98_AL_.jpg"
     },
     {
-        name: "inFamous",
+        name: "InFamous",
         genre: "Action, Adventure, Fantasy",
         rating: "8.0",
         year: "2009",
@@ -15764,7 +15722,7 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BYjQ1MjFiY2QtMTUyNS00MGFhLThhYWMtOGU4OWEwNjA5Y2E1XkEyXkFqcGdeQXVyNzg5OTk2OA@@._V1_UY98_CR1,0,67,98_AL_.jpg"
     },
     {
-        name: "You Don't Know Jack",
+        name: "You Don't Know Jack - 1995",
         genre: "Comedy, Game-Show",
         rating: "8.0",
         year: "1995",
@@ -19775,25 +19733,11 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BMzVjZWFjYmEtZDBmYi00YzFmLWI4YWMtODUyMDc4MzExZTg0XkEyXkFqcGdeQXVyNTYzNTY0NzM@._V1_UY98_CR53,0,67,98_AL_.jpg"
     },
     {
-        name: "Friday Night Funkin: Neo",
-        genre: "Animation, Music",
-        rating: "7.9",
-        year: "2021",
-        image: "https://m.media-amazon.com/images/S/sash/NapCxx-VwSOJtCZ.png"
-    },
-    {
         name: "Cold Zero: No Mercy",
         genre: "Action",
         rating: "7.9",
         year: "2003",
         image: "https://m.media-amazon.com/images/M/MV5BMWI1ZjY0NjEtOWNhOS00MTIzLWJlYjgtZDExNDY3Yzc0ZWYxXkEyXkFqcGdeQXVyNjU3OTI4MDU@._V1_UY98_CR0,0,67,98_AL_.jpg"
-    },
-    {
-        name: "ssn",
-        genre: "undefined",
-        rating: "7.9",
-        year: "1996",
-        image: "https://m.media-amazon.com/images/S/sash/NapCxx-VwSOJtCZ.png"
     },
     {
         name: "Night Striker",
@@ -20741,7 +20685,7 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BYzg4NTZhM2MtMTNiYy00OGM0LThhODItYjQ1YWVjOWRlZGViXkEyXkFqcGdeQXVyMTI0MzA4NTgw._V1_UY98_CR1,0,67,98_AL_.jpg"
     },
     {
-        name: "Yume Nikki",
+        name: "Yume Nikki - 2004",
         genre: "Adventure, Fantasy, Horror",
         rating: "7.8",
         year: "2004",
@@ -24505,13 +24449,6 @@ const gameData = [
         rating: "7.7",
         year: "2012",
         image: "https://m.media-amazon.com/images/M/MV5BNzQxMDdkN2YtODU3Mi00NTQ1LWEzZTMtMGNiOWViM2Y3Y2IxXkEyXkFqcGdeQXVyNjM2NDIwMzQ@._V1_UY98_CR1,0,67,98_AL_.jpg"
-    },
-    {
-        name: "Total War: Three Kingdoms",
-        genre: "Action",
-        rating: "7.7",
-        year: "",
-        image: "https://m.media-amazon.com/images/M/MV5BOTNjZWQwYTAtYzYwZC00ZTkzLThjOGEtMzE5ZTQzZjJhOGQ5XkEyXkFqcGdeQXVyNDIwOTkyNjM@._V1_UY98_CR1,0,67,98_AL_.jpg"
     },
     {
         name: "Seduce Me",
@@ -29414,7 +29351,7 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BOTk1ZTEwNWMtMTcwMi00MjEzLWE3NjQtNzYxMzIwYmU4YTI3XkEyXkFqcGdeQXVyMTgwOTE5NDk@._V1_UY98_CR42,0,67,98_AL_.jpg"
     },
     {
-        name: "80 Days",
+        name: "80 Days - 2005",
         genre: "Adventure",
         rating: "7.6",
         year: "2005",
@@ -30429,7 +30366,7 @@ const gameData = [
         image: "https://m.media-amazon.com/images/S/sash/NapCxx-VwSOJtCZ.png"
     },
     {
-        name: "Wizard of Wor",
+        name: "Wizard of Wor - 1980",
         genre: "Action, Fantasy, Sci-Fi",
         rating: "7.6",
         year: "1980",
@@ -34727,7 +34664,7 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BM2JmZTZiN2EtOGI1NS00MTBlLThkNjEtNWI4YTRhY2IwZWIyXkEyXkFqcGdeQXVyNjExODE1MDc@._V1_UY98_CR2,0,67,98_AL_.jpg"
     },
     {
-        name: "Mario Bros.",
+        name: "Mario Bros. - 1983",
         genre: "Action, Fantasy",
         rating: "7.4",
         year: "1983",
@@ -34879,13 +34816,6 @@ const gameData = [
         rating: "7.4",
         year: "1992",
         image: "https://m.media-amazon.com/images/M/MV5BZTMzMDk2NDEtNTEzOS00YmNmLWE2MzktYzQxZTEzZjMwYWZhXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UX67_CR0,0,67,98_AL_.jpg"
-    },
-    {
-        name: "Deliver Us the Moon",
-        genre: "Action, Adventure, Sci-Fi",
-        rating: "7.4",
-        year: "",
-        image: "https://m.media-amazon.com/images/M/MV5BMTNkN2JjMDctZWMzZC00ZjI4LWI1M2EtMDhhNGI1MDI1NDU4XkEyXkFqcGdeQXVyNzIyNjgxMDk@._V1_UX67_CR0,0,67,98_AL_.jpg"
     },
     {
         name: "Age of Empires IV",
@@ -35791,7 +35721,7 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BOTE4ZjllMmMtOTc0ZS00ZDg2LThjM2ItMzM3ZTA2MGY3MDc4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMzUwMjk0OTQ@._V1_UY98_CR99,0,67,98_AL_.jpg"
     },
     {
-        name: "Defender",
+        name: "Defender - 1981",
         genre: "Action, Adventure, Fantasy",
         rating: "7.4",
         year: "1981",
@@ -39851,7 +39781,7 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BOWJmYWZkN2YtNWU2OC00YTUyLWExMjItNjUzMWRiY2IyYWIxXkEyXkFqcGdeQXVyNTcyNTg3Nzc@._V1_UX67_CR0,0,67,98_AL_.jpg"
     },
     {
-        name: "Bionic Commando",
+        name: "Bionic Commando - 1988",
         genre: "Action, Adventure, War",
         rating: "7.3",
         year: "1988",
@@ -41174,7 +41104,7 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BMTE3ZWNjNjMtMDZlMy00ZmE2LTg4NWMtMjg3ODg5Mzg1NWRlXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UX67_CR0,0,67,98_AL_.jpg"
     },
     {
-        name: "Kaboom!",
+        name: "Kaboom! - 1981",
         genre: "Action, Family",
         rating: "7.3",
         year: "1981",
@@ -46030,13 +45960,6 @@ const gameData = [
         rating: "7.2",
         year: "2021",
         image: "https://m.media-amazon.com/images/M/MV5BNDBiOTg3YzQtOWQ5NC00ZTg4LTk0M2EtMzcxN2E2ZWQ4YTc4XkEyXkFqcGdeQXVyMTE0MTMxNDUz._V1_UX67_CR0,0,67,98_AL_.jpg"
-    },
-    {
-        name: "Super Street Fighter IV: 3D Edition",
-        genre: "Action",
-        rating: "7.2",
-        year: "",
-        image: "https://m.media-amazon.com/images/M/MV5BYWZkMWY0N2MtMTFhNC00YWU0LThhYWItMDVlZjllMzljZTM3XkEyXkFqcGdeQXVyNDQzMDc5ODU@._V1_UY98_CR21,0,67,98_AL_.jpg"
     },
     {
         name: "X-COM: Apocalypse",
@@ -53865,13 +53788,6 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BNWM1MDZkMTMtNzc4Yy00NDU0LWEwNzgtMWViOGQwZmM4ZmY5XkEyXkFqcGdeQXVyNjU3OTI4MDU@._V1_UY98_CR15,0,67,98_AL_.jpg"
     },
     {
-        name: "Îhatôvo monogatari",
-        genre: "Adventure",
-        rating: "7.0",
-        year: "1993",
-        image: "https://m.media-amazon.com/images/S/sash/NapCxx-VwSOJtCZ.png"
-    },
-    {
         name: "Soko-Ban",
         genre: "undefined",
         rating: "7.0",
@@ -57785,7 +57701,7 @@ const gameData = [
         image: "https://m.media-amazon.com/images/M/MV5BZjNkZmIwYmYtZDA5Mi00YzVkLTkwNmMtMGQzZGQzMzJkYjEwXkEyXkFqcGdeQXVyMTI0MzA4NTgw._V1_UY98_CR0,0,67,98_AL_.jpg"
     },
     {
-        name: "Xena: Warrior Princess",
+        name: "Xena: Warrior Princess - 1999",
         genre: "Action, Adventure, Fantasy",
         rating: "6.8",
         year: "1999",

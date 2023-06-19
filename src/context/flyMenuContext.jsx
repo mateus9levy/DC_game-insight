@@ -3,7 +3,7 @@ import gameData from '../utils/data/data';
 const FlyMenuContext = createContext();
 
 export const FlyMenuProvider = ({ children }) => {
-  const [flyMenuData, setFlyMenuData] = useState({loaded:false,ordenated:gameData});
+  const [flyMenuData, setFlyMenuData] = useState({loaded:false,ordenated:gameData, inversions: 0});
 
   return (
     <FlyMenuContext.Provider value={{ flyMenuData, setFlyMenuData }}>

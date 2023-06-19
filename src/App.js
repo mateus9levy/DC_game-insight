@@ -7,10 +7,9 @@ import { useFlyMenuData } from "./context/flyMenuContext";
 function App() {
   const [slicedGameData, setSlicedGameData] = useState([]);
   const { flyMenuData, setFlyMenuData } = useFlyMenuData();
-
   const sliceGameData = (gamedata) => {
     const arr = [];
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 10 ; i++) {
       arr.push(gamedata[i]);
     }
     return arr;

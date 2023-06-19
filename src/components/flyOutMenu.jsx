@@ -1,42 +1,63 @@
 import { Fragment, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import { ChevronDownIcon, CalendarDaysIcon, QueueListIcon,StarIcon,ListBulletIcon} from '@heroicons/react/20/solid'
+import { ChevronDownIcon, CalendarDaysIcon, QueueListIcon, StarIcon, ListBulletIcon } from '@heroicons/react/20/solid'
 import mergeSort from '../utils/mergeSort'
 import gameData from '../utils/data/data'
 import { useFlyMenuData } from '../context/flyMenuContext'
 
 const solutions = [
   { name: 'Nome (A-Z)', description: 'Get a better understanding of your traffic', href: '#', icon: ListBulletIcon },
+  { name: 'Nome (Z-A)', description: 'Get a better understanding of your traffic', href: '#', icon: ListBulletIcon },
+  { name: 'Nota (0-10)', description: 'Speak directly to your customers', href: '#', icon: StarIcon },
   { name: 'Nota (10-0)', description: 'Speak directly to your customers', href: '#', icon: StarIcon },
-  { name: 'Ano', description: "Your customers' data will be safe and secure", href: '#', icon: CalendarDaysIcon },
+  { name: 'Mais antigo', description: "Your customers' data will be safe and secure", href: '#', icon: CalendarDaysIcon },
+  { name: 'Mais novo', description: "Your customers' data will be safe and secure", href: '#', icon: CalendarDaysIcon },
 
 ]
 
 function FlyOutMenu() {
-  const {setFlyMenuData} = useFlyMenuData()
-  const mergelist = (key) =>{
+  const { setFlyMenuData } = useFlyMenuData()
+  const mergelist = (key) => {
+    let reverse = false
     let toOrdenate = ""
-    switch(key){
+    switch (key) {
       case "Nome (A-Z)":
         toOrdenate = "name";
         break;
+      case 'Nome (Z-A)':
+        toOrdenate = "name";
+        reverse = true
+        break;
+      case 'Nota (0-10)':
+        toOrdenate = "rating";
+        break;
       case 'Nota (10-0)':
-         toOrdenate = "rating";
-         break;
-      case "Ano":
+        toOrdenate = "rating";
+        reverse = true
+        break;
+      case "Mais antigo":
         toOrdenate = "year"
+        break;
+      case "Mais novo":
+        toOrdenate = "year"
+        reverse = true
         break;
     }
 
-
-   return mergeSort(gameData,toOrdenate)
+    if (reverse) {
+     const { sortedArray , inversionCount } = mergeSort(gameData, toOrdenate)
+     return { ordenated: sortedArray.reverse() , inversions: inversionCount }
+    }
+      
+    const { sortedArray , inversionCount } = mergeSort(gameData, toOrdenate)
+    return {ordenated: sortedArray, inversions:inversionCount}
   }
 
 
   return (
     <Popover className="relative">
       <Popover.Button className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-        <span>Opcoes de ordeção</span>
+        <span>Opcoes de ordenação</span>
         <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
       </Popover.Button>
 
@@ -58,13 +79,13 @@ function FlyOutMenu() {
                     <item.icon className="h-6 w-6 z-i text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
                   </div>
                   <div>
-                    <a onClick={(()=>{
-                       const ordenated = mergelist(item.name)
-                       setFlyMenuData({loaded:true,ordenated:ordenated})
-                    })} 
-                    className="font-semibold text-gray-900">
+                    <a onClick={(() => {
+                      const ordenated = mergelist(item.name)
+                      setFlyMenuData({ loaded: true, ordenated: ordenated.ordenated, inversions: ordenated.inversions })
+                    })}
+                      className="font-semibold text-gray-900">
                       {item.name}
-                    <span className="absolute inset-0" />
+                      <span className="absolute inset-0" />
                     </a>
                   </div>
                 </div>
