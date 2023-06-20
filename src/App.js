@@ -8,10 +8,9 @@ import gameData from "./utils/data/data";
 function App() {
   const [slicedGameData, setSlicedGameData] = useState([]);
   const { flyMenuData, setFlyMenuData } = useFlyMenuData();
-  console.log(gameData.length)
   const sliceGameData = (gamedata) => {
     const arr = [];
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 60; i++) {
       arr.push(gamedata[i]);
     }
     return arr;
