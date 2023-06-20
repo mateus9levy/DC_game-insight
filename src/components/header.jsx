@@ -1,7 +1,7 @@
 import React from "react"
 import FlyOutMenu from "./flyOutMenu"
 import InversionMenu from "./inversionMenu"
-
+import logo from "../images/logo.jpg"
 const Header = () => {
 
     return (
@@ -11,7 +11,7 @@ const Header = () => {
 
                     <div class="flex lg:flex-1">
                         <a href="#" class="-m-1.5 p-1.5">
-                            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+                            <img style={{width:"150px", borderRadius:"60px"}} src={logo} alt="" />
                         </a>
 
                     </div>
