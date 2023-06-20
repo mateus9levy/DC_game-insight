@@ -1,5 +1,6 @@
 import React from "react"
 import FlyOutMenu from "./flyOutMenu"
+import InversionMenu from "./inversionMenu"
 
 const Header = () => {
 
@@ -16,6 +17,7 @@ const Header = () => {
                     </div>
                     <div class="mx-auto grid max-w-2xl mt-6 grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                     <FlyOutMenu/>
+                    <InversionMenu/>
                     </div>
                     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                         <div class="mt-8 flex max-w-md gap-x-4">

@@ -9,7 +9,7 @@ function App() {
   const { flyMenuData, setFlyMenuData } = useFlyMenuData();
   const sliceGameData = (gamedata) => {
     const arr = [];
-    for (let i = 0; i < 10 ; i++) {
+    for (let i = 0; i < 10; i++) {
       arr.push(gamedata[i]);
     }
     return arr;
@@ -19,7 +19,7 @@ function App() {
     const slice = sliceGameData(flyMenuData.ordenated);
     setSlicedGameData(slice);
     setFlyMenuData({ loaded: false, ordenated: flyMenuData.ordenated });
-  }, [flyMenuData.loaded]); 
+  }, [flyMenuData.loaded]);
 
   return (
     <>

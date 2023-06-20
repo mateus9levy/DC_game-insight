@@ -45,12 +45,12 @@ function FlyOutMenu() {
     }
 
     if (reverse) {
-     const { sortedArray , inversionCount } = mergeSort(gameData, toOrdenate)
-     return { ordenated: sortedArray.reverse() , inversions: inversionCount }
+      const { sortedArray, inversionCount } = mergeSort(gameData, toOrdenate)
+      return { ordenated: sortedArray.reverse(), inversions: inversionCount }
     }
-      
-    const { sortedArray , inversionCount } = mergeSort(gameData, toOrdenate)
-    return {ordenated: sortedArray, inversions:inversionCount}
+
+    const { sortedArray, inversionCount } = mergeSort(gameData, toOrdenate)
+    return { ordenated: sortedArray, inversions: inversionCount }
   }
 
 

@@ -4,6 +4,7 @@ const GameCard = ({ gameProps }) => {
     const props = gameProps
     return (
         <>
+
             <ul role="list" className="grid  mt-40 gap-y-12 sm:grid-cols-2  sm:gap-y-16 xl:col-span-2">
                 {props.map((game) => (
                     <li key={game.name}>
@@ -12,7 +13,13 @@ const GameCard = ({ gameProps }) => {
                             <div>
                                 <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{game.name}</h3>
                                 <h5 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{game.year}</h5>
-                                <p className="text-sm font-semibold leading-6 text-indigo-600">{game.genre}</p>
+                                {game.genre.map((genre) => {
+                                    return (
+                                        <p key={genre} className="text-sm font-semibold leading-6 text-indigo-600">
+                                            {genre}
+                                        </p>
+                                    );
+                                })}
                                 <p className="text-sm font-semibold leading-6 text-amber-400">{game.rating}</p>
                             </div>
                         </div>
