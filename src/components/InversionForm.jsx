@@ -136,8 +136,8 @@ export default function InversionForm() {
                     </button>
                 </div>
                 <div className="mt-5 ml-20">
-                <h1 className="-mb-20 ml-7">Jogo Recomendado:</h1>
-                {status ? <><GameCard gameProps={[recomendados]}/></>: <></>}
+               
+                {status ? <> <h1 className="-mb-20 ml-7">Jogo Recomendado:</h1> <GameCard gameProps={[recomendados]}/></>: <></>}
                 </div>
                 
             </div>

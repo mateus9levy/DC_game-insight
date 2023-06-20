@@ -2,10 +2,8 @@ import React from "react";
 
 const GameCard = ({ gameProps }) => {
     const props = gameProps
-    console.log(props)
     return (
         <>
-
             <ul role="list" className="grid  mt-40 gap-y-12 sm:grid-cols-2  sm:gap-y-16 xl:col-span-2">
                 {props.map((game) => (
                     <li key={game.name}>
