@@ -2,6 +2,7 @@ import React from "react";
 
 const GameCard = ({ gameProps }) => {
     const props = gameProps
+    console.log(props)
     return (
         <>
 

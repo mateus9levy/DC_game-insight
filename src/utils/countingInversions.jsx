@@ -1,6 +1,4 @@
-import gameData from "./data/data";
 
-/// Função para calcular o número de inversões entre duas classificações
 function countInversions(arr1, arr2) {
     let count = 0;
     for (let i = 0; i < arr1.length; i++) {
@@ -12,7 +10,7 @@ function countInversions(arr1, arr2) {
   }
   
   // Função para recomendar jogos com base nas preferências do usuário
-  function recommendGames(preferences, games) {
+  export default function recommendGames(preferences, games) {
     // Array para armazenar as inversões de cada jogo
     let inversions = [];
   
@@ -40,24 +38,3 @@ function countInversions(arr1, arr2) {
     let recommendedGames = inversions.filter((game) => game.inversions === inversions[0].inversions);
     return recommendedGames.map((game) => game.game);
   }
-  
-  
-  // Exemplo de uso
-  const preferences = {
-    genre: ["Crime","Comedy"],
-    rating: 7.3,
-    year: 2020
-  };
-  
-  const games = [
-    {
-      name: "Stargunner",
-      genre: ["Action", "Sci-Fi"],
-      rating: "",
-      year: "1996",
-      image: "https://m.media-amazon.com/images/M/MV5BZWE3ZDc3ZDYtOGU2Yi00ZGNjLTlmZmYtOWUwYjA5NjI0Njk2XkEyXkFqcGdeQXVyNTM2MDQ5NTU@._V1_UY98_CR8,0,67,98_AL_.jpg"
-    },
-    // Adicione outros jogos aqui
-  ];
-  export function exec(){  const recommendedGames = recommendGames(preferences, gameData);
-    console.log(recommendedGames);}
