@@ -8,12 +8,7 @@ import {
   FingerPrintIcon,
   SquaresPlusIcon,
 } from '@heroicons/react/24/outline'
-
-
-const callsToAction = [
-  { name: 'Receber Recomendação', href: '#', icon: PlayCircleIcon },
-
-]
+import InversionForm from './InversionForm'
 
 function InversionMenu() {
   return (
@@ -35,19 +30,7 @@ function InversionMenu() {
         <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
           <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
             <div className="p-4">
-              
-            </div>
-            <div className="grid grid-cols-1 divide-x divide-gray-900/5 bg-gray-50">
-              {callsToAction.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="flex items-center justify-center gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
-                >
-                  <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-                  {item.name}
-                </a>
-              ))}
+             <InversionForm/>
             </div>
           </div>
         </Popover.Panel>
