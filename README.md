@@ -50,4 +50,5 @@ Se desejar, você também pode ordenar os jogos para visualizá-los. Basta clica
 
 ## Video 
 
+https://github.com/mateus9levy/DC_game-insight/assets/70410544/85e84173-7916-4964-934d-6bf2bc4c682c
 
